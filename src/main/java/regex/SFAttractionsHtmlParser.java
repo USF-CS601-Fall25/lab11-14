@@ -56,7 +56,7 @@ public class SFAttractionsHtmlParser {
     }
 
     public static void main(String[] args) {
-        List<String> links = getValidLinks("input/touristInfo.html");
+        List<String> links = getValidLinks("src/main/resources/touristInfo.html");
         System.out.println(links);
         writeToHtmlFile(links, "result.html"); // output all the valid links (without the fragment) to another html file
         // The expected output is in expectedResult.html
